@@ -7,7 +7,7 @@ CREATE TABLE patients(
     full_name varchar(20) not null,
     phone_number varchar(15) unique,
     gender varchar(10) not null,
-    date_of_birth date check(date_of_birth < current_date())
+    date_of_birth date 
 );
 
 CREATE TABLE doctors(
